@@ -23,14 +23,12 @@ public class SelfmedFormat {
 			String resultSingleObject = ""; 
 			resultSingleObject = objectName + ":\n"; 
 			for (String attribute : attributeList) {
-				resultSingleObject += "\t" + attribute.trim().replace("=", ":") + "\n";
+				resultSingleObject += "\t" + attribute.trim().replace("=", ": ") + "\n";
 			}
 			output+=resultSingleObject;
 		}
-		
-		System.out.println(output);
-
-		return output;
+		String newOutput=output.replace(" ASSIGNED"," 0").replace(" NOTASSIGNED", " 1");
+		return newOutput;
 	}
 
 

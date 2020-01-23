@@ -1,10 +1,13 @@
-<b>Test Self-Med</b>
+## Requirements
 
-Le but de ce test est d'implémenter les deux endpoints *"/api/output/json"* et *"/api/output/selfmed"* . <br>
-Ces deux endpoints doivent retourner le xml issu du endpoint *"/api/input/xml"* formatter respectivement en json et dans un format inventé "selfmed" (cf: ci-dessous).<br>
-Le but est de voir comment vous architecturez le tout (interface, enum, etc...)
+For building and running the application you need:
 
+- [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- run maven update project .
 
+<b>Self-Med test </b>
+
+Endpoint *"/api/input/xml" retourne l'input suivant : 
 * Xml input:
 ```xml
 <root>
@@ -25,7 +28,7 @@ Le but est de voir comment vous architecturez le tout (interface, enum, etc...)
 	</transaction>
 </root>
 ```
-
+Endpoint *"/api/output/json" prendre l'input de l'endpoint "/api/input/xml" et retorune un output en format JSON
 * JSON output:
 ```json
 {
@@ -57,7 +60,7 @@ Le but est de voir comment vous architecturez le tout (interface, enum, etc...)
 	]
 }
 ```
-
+Endpoint *"/api/output/selfmed" prendre l'input de l'endpoint "/api/input/xml" et retorune un output en un format custom nommé Selfmed 
 * Selfmed output:
 ```
 transaction:

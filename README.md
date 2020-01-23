@@ -7,7 +7,7 @@ For building and running the application you need:
 
 <b>Self-Med test </b>
 
-Endpoint *"/api/input/xml" retourne l'input suivant : 
+Endpoint "/api/input/xml" retourne l'input suivant : 
 * Xml input:
 ```xml
 <root>
@@ -28,7 +28,7 @@ Endpoint *"/api/input/xml" retourne l'input suivant :
 	</transaction>
 </root>
 ```
-Endpoint *"/api/output/json" prendre l'input de l'endpoint "/api/input/xml" et retorune un output en format JSON
+Endpoint "/api/output/json" prendre l'input de l'endpoint "/api/input/xml" et retorune un output en format JSON
 * JSON output:
 ```json
 {
@@ -60,7 +60,7 @@ Endpoint *"/api/output/json" prendre l'input de l'endpoint "/api/input/xml" et r
 	]
 }
 ```
-Endpoint *"/api/output/selfmed" prendre l'input de l'endpoint "/api/input/xml" et retorune un output en un format custom nommé Selfmed 
+Endpoint "/api/output/selfmed" prendre l'input de l'endpoint "/api/input/xml" et retorune un output en un format custom nommé Selfmed 
 * Selfmed output:
 ```
 transaction:
